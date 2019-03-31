@@ -1,0 +1,15 @@
+
+console.log(" _    _                       _ _     _    ")
+console.log("| |  | |                     | (_)   | |   ")
+console.log("| |__| |_   _ _ __   ___ _ __| |_ ___| | __")
+console.log("|  __  | | | | '_ \\ / _ \\ '__| | / __| |/ /")
+console.log("| |  | | |_| | |_) |  __/ |  | | \\__ \\   < ")
+console.log("|_|  |_|\\__, | .__/ \\___|_|  |_|_|___/_|\\_\\")
+console.log("        __/ | |                            ")
+console.log("       |___/|_|                            ")
+
+console.log("---")
+console.log("Welcome, traveler!")
+console.log("You have stumbled upon the mystical terminal. ")
+console.log("While you are here, you should check out some of my cool project on github!")
+console.log("https://twitch.tv/retraxa")

@@ -27,8 +27,9 @@ article {
             position: absolute;
 }
 
-.content{
+.blank{
     height:100vh;
+    width:max-content
 }
 
 .about{
@@ -71,6 +72,12 @@ article {
     text-align:center;
 }
 
+.subtitle{
+    font-size: calc(1vw * 2);
+    color:#cc82b3;
+    margin:0;
+}
+
 a:hover, a:visited, a:link, a:active, a:any-link{
     text-decoration: none !important;
     color:#cc5da7;
@@ -82,12 +89,20 @@ a:hover, a:visited, a:link, a:active, a:any-link{
     .name{
         font-size: calc(1vw * 15);
     }
-
     .about{
         width:100%;
     }
+    .content{
+        display:none;
+    }
+    .subtitle{
+        font-size: calc(1vw * 8);
+    }
     .pgp{
         display:none;
+    }
+    .links{
+        font-size: calc(1vw * 10);
     }
 
 }

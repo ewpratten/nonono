@@ -92,8 +92,9 @@ a:hover, a:visited, a:link, a:active, a:any-link{
     .about{
         width:100%;
     }
-    .content{
-        display:none;
+    .null{
+        display:none !important;
+        height:0px;
     }
     .subtitle{
         font-size: calc(1vw * 8);

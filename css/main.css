@@ -91,6 +91,8 @@ a:hover, a:visited, a:link, a:active, a:any-link{
     }
     .about{
         width:100%;
+        overflow: hidden;
+        position:fixed;
     }
     .null{
         display:none !important;

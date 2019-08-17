@@ -1,0 +1,30 @@
+{%include head.html%}
+
+<body>
+    {%include nav.html%}
+
+    <div class="container content">
+        <h1>Hi. I am {{site.title}}</h1>
+        <br>
+
+        
+
+
+        <!-- CLI -->
+        <div class="term"><p class="term-user">carter@website</p> <p class="term-path">/var/www/hyperlisk.xyz $</p> <p class="term-cat">cat website.txt</p></div>
+
+        <hr>
+
+        <div class="md-content">
+            <h3>About me</h3>
+            {{site.description}}
+            <br><br>
+            {{content}}
+        </div>
+
+        <br><br>
+        <div class="term"><p class="term-user">carter@website</p> <p class="term-path">/var/www/hyperlisk.xyz $</p> <span class="blinking-cursor">_</span></div>
+    </div>
+
+    {%include footer.html%}
+</body>

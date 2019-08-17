@@ -1,6 +1,23 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+
+
+#### Programming experience
+
+<pre class="langs">
+Python ===========================
+C++    ==================
+Java   ==============
+PHP    =====
+</pre>
+
+I have been programming since 2015, and have picked up many skills both in, and out of the field along the way, including Python, Java, C++, PHP, Embedded programming, Server management, and even CNC operation! 
+
+#### My Projects
+
+
+#### Blog posts
+
+
+#### Contact me

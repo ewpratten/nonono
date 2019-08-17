@@ -7,23 +7,57 @@
         <h1>Hi. I am {{site.title}}</h1>
         <br>
 
-        
+
 
 
         <!-- CLI -->
-        <div class="term"><p class="term-user">carter@website</p> <p class="term-path">/var/www/hyperlisk.xyz $</p> <p class="term-cat">cat website.txt</p></div>
+        <div class="term">
+            <p class="term-user">carter@website</p>
+            <p class="term-path">~/ $</p>
+            <p class="term-cat">cat about.txt</p>
+        </div>
 
-        <hr>
 
         <div class="md-content">
             <h3>About me</h3>
             {{site.description}}
             <br><br>
             {{content}}
+
+            <div class="term">
+                <p class="term-user">carter@website</p>
+                <p class="term-path">~/&nbsp;$</p>&nbsp;ls&nbsp;./projects
+            </div>
+            {% for project in site.data.projects %}
+            <a href="{{project.url}}">{{project.name}}</a><br>
+            {% endfor %}
+            <br>
+
+            <!-- Blog -->
+            <!-- This is automatically handled by Jekyll -->
+            <div class="term">
+                <p class="term-user">carter@website</p>
+                <p class="term-path">~/&nbsp;$</p>&nbsp;ls&nbsp;./blog
+            </div>
+
+            {% for post in site.posts %}
+            {{post.date | truncate: 10, ""}} <a href="{{post.url}}">{{post.title}}</a><br>
+            {% endfor %}
+
+            <br>
+
+            <!-- Contact section -->
+            {%for page in site.pages%}
+            {%if page.title == "Contact" %}
+            {{page.content}}
+            {%endif%}
+            {%endfor%}
         </div>
 
-        <br><br>
-        <div class="term"><p class="term-user">carter@website</p> <p class="term-path">/var/www/hyperlisk.xyz $</p> <span class="blinking-cursor">_</span></div>
+        <div class="term">
+            <p class="term-user">carter@website</p>
+            <p class="term-path">~/&nbsp;$</p>&nbsp;<span class="blinking-cursor">_</span>
+        </div>
     </div>
 
     {%include footer.html%}

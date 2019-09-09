@@ -4,11 +4,8 @@
     {%include nav.html%}
 
     <div class="container content">
-        <h1>Hi. I am {{site.title}}</h1>
+        <h1>Hyperlisk</h1>
         <br>
-
-
-
 
         <!-- CLI -->
         <div class="term">
@@ -17,13 +14,10 @@
             <p class="term-cat">cat about.txt</p>
         </div>
 
-
         <div class="md-content">
-            <h3>About me</h3>
             {{site.description}}
             <br><br>
             {{content}}
-
             <div class="term">
                 <p class="term-user">carter@website</p>
                 <p class="term-path">~/&nbsp;$</p>&nbsp;ls&nbsp;./projects
@@ -31,19 +25,6 @@
             {% for project in site.data.projects %}
             <a href="{{project.url}}">{{project.name}}</a><br>
             {% endfor %}
-            <br>
-
-            <!-- Blog -->
-            <!-- This is automatically handled by Jekyll -->
-            <div class="term">
-                <p class="term-user">carter@website</p>
-                <p class="term-path">~/&nbsp;$</p>&nbsp;ls&nbsp;./blog
-            </div>
-
-            {% for post in site.posts %}
-            {{post.date | truncate: 10, ""}} <a href="{{post.url}}">{{post.title}}</a><br>
-            {% endfor %}
-
             <br>
 
             <!-- Contact section -->
